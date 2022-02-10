@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<header>
+
+
+
+  <div class="header-elements">
+    <button type="button" class="btn btn-primary adicionar-participantes" data-bs-toggle="modal" data-bs-target="#exampleModal">
+       Adicionar Participantes
+    </button>
+    
+    
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header d-flex">
+              <h5 class="modal-title" id="exampleModalLabel">Nome do Participante</h5>
+              <div id="avisoName"role="alert">
+
+              </div>
+            </div>
+            <div class="modal-body">
+              <div>
+                <label for="fname">First name</label>
+                <span style="color: #f00;">*</span>
+              </div>
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+    
+              <input  class="btn btn-secondary" id="save-name" type="submit" value="Adicionar" >
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+    <button  type="button" class="visualizar-name" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+    
+      <h2 id="number-people">
+          0
+      </h2>
+    </button>
+    
+    
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Nomes</h5>
+    
+          </div>
+          <div class="modal-body">
+            <ul id="list-integrantes">
+    
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</header>
+
+
+<body>
+
+  
+    <div class="block">
+      <div class="position-add-cartao">
+        <button type="button" class="btn btn-primary adicionar-cartao" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+           Adicionar Cartão
+          </button>
+      
+      
+      
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header d-flex">
+                <h5 class="modal-title" id="exampleModalLabel3">Formulário</h5>
+                <div id="avisoCartao"  role="alert">
+      
+                </div>
+      
+      
+              </div>
+              <div class="modal-body colunas">
+
+
+                  <div class="estimativa">
+                    <div>
+                      <div class="span" >
+                        <label for="titulo"> Titulo</label>
+                        <span style="color: #f00;">*</span>
+                      </div>
+                      <input class="inputs" type="text" id="titulo" name="titulo">
+                    </div>
+
+                    <span id="span-titulo" ></span>
+
+                  </div>
+
+
+                  <div class="estimativa">
+                    <div>
+                      <div class="span" >
+                      <label
+                      for="descricao">Descrição</label>
+                      <span style="color: #f00;">*</span>
+                      </div>
+                      <textarea class="inputs" id="descricao" ></textarea>
+                    </div>
+
+                    <span id="span-descricao"></span>
+
+                  </div>
+
+      
+                  <div class="estimativa">
+                    <div>
+                      <div class="span" >
+                      <label for="usuario">Usario Responsável</label>
+                      <span style="color: #f00;">*</span>
+                     </div>
+                        <select class="inputs" id="option-names" class="form-control options">
+                      <option>VAZIO</option>
+                      </select>
+                    </div>
+                    
+                      <span id="span-name"> </span>
+
+                  </div>
+
+
+                  <div class="estimativa">
+                    <div>
+                      <div class="span" >
+                      <label for="estimativa">Estimativa (Em Horas)</label>
+                      <span style="color: #f00;">*</span>
+                 </div>
+                      <input class="inputs" type="text" id="estimativa" name="estimativa" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                    </div>
+                    <span id="span-estimativa"></span>
+                  </div>
+      
+      
+                  <label for="coluna">Coluna</label>
+                  <select class="inputs" id="coluna" class="form-control options">
+                    <option>A Fazer</option>
+                    <option>Em andamento</option>
+                    <option>Finalizado</option>
+                  </select>
+
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
+      
+                <input id="adicionar-cartao" class="btn btn-secondary" id="save" type="submit" value="Adicionar" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      
+      
+      
+         <div class="tabelao ">
+        <div id="afazer-size" class="borda  col-md-3 col-sm-8 col-8" >
+            <h1>
+              A FAZER
+            </h1>
+      
+             <div id = "tabela-afazer" class="pai-cartao" >
+      
+             </div >
+      
+        </div>
+      
+        <div  class="borda  col-md-3 col-sm-8 col-8">
+          <h1>
+           ANDAMENTO
+          </h1>
+           <div id = "tabela-fazendo" class="pai-cartao" >
+          </div >
+      
+        </div>
+        <div  class="borda col-md-3 col-sm-8 col-8">
+          <h1>
+            FINALIZADO
+          </h1>
+           <div id = "tabela-finalizado" class="pai-cartao">
+          </div >
+      
+        </div>
+      
+      </div>
+    </div>
+ 
+
+  
+    
+  <script src="js/boostrap/jquery.js"></script>
+	<script src="js/boostrap/js/bootstrap.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
