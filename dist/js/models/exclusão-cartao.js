@@ -7,11 +7,7 @@ export class ExclusaoCartao {
         var botaoSubmit = document.querySelectorAll(".submit");
         botaoSubmit.forEach((botoes) => {
             botoes.addEventListener('click', (botao) => {
-                var res = confirm("Realmente deseja excluir o botão?");
-                console.log(res);
-                if (res == true) {
-                    this.excluirCartao(botao);
-                }
+                this.excluirCartao(botao);
             });
         });
     }

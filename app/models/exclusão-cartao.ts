@@ -3,25 +3,24 @@ import { Alert } from "./alert.js";
 export class ExclusaoCartao{
 
    private alert = new Alert;
+ 
     
     atualizarBotoes(){
+   
 
         var botaoSubmit= document.querySelectorAll(".submit") as any;
 
   
         botaoSubmit.forEach((botoes:any) => {
-            
+
+        
         
          botoes.addEventListener('click', (botao:HTMLInputElement):any=>{
 
-            var res :any= confirm("Realmente deseja excluir o botão?");
-          console.log(res)
-
-            if(res==true){
-
+          
 
          this.excluirCartao(botao);
-            }
+            
        
    })
 
@@ -35,6 +34,8 @@ export class ExclusaoCartao{
 
     excluirCartao(botao:any){
 
+
+
         var idbotao = parseInt(botao.path[0].id)
 
       
@@ -45,7 +46,7 @@ export class ExclusaoCartao{
       
         if(this.alert.alertexclusao()){
         excluirCartao.remove();
+
         }
-    
     }
 }

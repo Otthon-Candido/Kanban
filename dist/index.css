@@ -12,13 +12,13 @@ header{
 .alert{
     margin-top: 20px;
 }
+
  .modal-header-expand{
      height: 200px;
  }
 
  .alert-warning-teste{
      font-size: 12px;
-
  }
 
 .header-elements{
@@ -54,6 +54,7 @@ header{
 }
 
 #number-people{
+
    padding-top: 2px;
     font-size: 22px;
 }
@@ -61,7 +62,6 @@ header{
 .adicionar-cartao{
     width: 130px;
     height: 35px;
-    
     margin-top: 20px;
     border-width: medium;
     border-color: black;
@@ -113,7 +113,6 @@ height: 30px;
 }
 
 .options{
-
 width: 190px;
 
 }
@@ -154,23 +153,19 @@ p{
 }
 
 .borda{
-
     border-style:solid;
     border-width: medium;
     height: 300px;
     padding-bottom: 20px;
     background-color: white;
-
 }
 
 .borda2{
-
     border-style:solid;
     border-width: medium;
     height: auto;
     padding-bottom: 20px;
     background-color: white;
-
 }
 
 #true-table{
@@ -199,14 +194,12 @@ h3{
 }
 
 .alinhar{
-
     display: grid;
     justify-items: center;
  
 }
 
 #tabela-afazer{
- 
    display: block;
    width:auto;
 }
@@ -219,10 +212,8 @@ h3{
 }
 
 #list-integrantes li{
-
     list-style-type:circle;
-   text-align: start;
-  
+    text-align: start;
 }
 
 .estimativa{
@@ -245,9 +236,7 @@ h3{
 }
 
 .span{
-
     display: flex;
-  
 }
 
 .span span{
