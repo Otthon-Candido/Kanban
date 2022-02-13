@@ -17,6 +17,7 @@ header{
      height: 200px;
  }
 
+
  .alert-warning-teste{
      font-size: 12px;
  }
@@ -112,6 +113,12 @@ width: 200px;
 height: 30px;
 }
 
+
+#descricao{
+height: 80px;
+
+}
+
 .options{
 width: 190px;
 
@@ -124,16 +131,15 @@ width: 190px;
 
 .cartao{
     margin: auto;
-
- width: 70%;
- border-radius: 25px;
- border-style:solid;
- border-width: medium;
- padding-top: 5px;
- background-color: rgb(5, 29, 64);
- margin-top: 30px;
- color: white;
- border-color: black;
+    width: 70%;
+    border-radius: 25px;
+    border-style:solid;
+    border-width: medium;
+    padding-top: 5px;
+    background-color: rgb(5, 29, 64);
+    margin-top: 30px;
+    color: white;
+    border-color: black;
 }
 .cartaoLi{
     display: grid;
@@ -174,23 +180,23 @@ p{
 }
 
 h1{
-border-bottom-width: medium;
-border-bottom-style: solid;
-font-size: 18px;
-margin-left: 50px;
-background-color: rgb(227, 171, 255);
-border-top-left-radius: 50px ;
-border-bottom-left-radius: 50px ;
-border-left-style:solid;
-border-left-width: initial;
-padding-left: 20px;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    font-size: 18px;
+    margin-left: 50px;
+    background-color: rgb(227, 171, 255);
+    border-top-left-radius: 50px ;
+    border-bottom-left-radius: 50px ;
+    border-left-style:solid;
+    border-left-width: initial;
+    padding-left: 20px;
 
 }
 
 h3{
     font-size: 14px; 
-  margin-bottom: 0px;
-  text-align: center;
+    margin-bottom: 0px;
+    text-align: center;
 }
 
 .alinhar{
