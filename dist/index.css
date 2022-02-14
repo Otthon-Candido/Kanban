@@ -77,10 +77,6 @@ header{
     margin-bottom: 30px;
 }
 
-.block{
-    display: block;
-}
-
 
 .modal-dialog {
     max-width: 400px;
@@ -93,7 +89,6 @@ header{
 }
 
 tbody{
-
     height: 200px;
 }
 
@@ -222,7 +217,7 @@ h3{
     text-align: start;
 }
 
-.estimativa{
+.alert-span{
     display: flex;
 }
 
